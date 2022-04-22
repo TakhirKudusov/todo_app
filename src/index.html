@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    <title>Todo App</title>
+</head>
+<body id="app">
+    <!--Navbar-->
+    <nav id="navbar">
+            <a id="logo" href="./index.html">Todo App</a>
+            <button id="github-btn" type="button"><a id="github-link" href="https://github.com/TakhirKudusov" target="_blank">My GitHub</a></button>
+    </nav>
+
+    <!--Todo form-->
+    <div id="todo-wrapper">
+        <p id="title">Add a todo</p>
+        <form id="todo-form"> 
+            <label for="todo-title">Title</label>
+            <input id="todo-title" placeholder="Enter a title" required>
+            <div>
+                <label for="todo-status">Completed</label>
+                <select id="todo-status">
+                    <option value="false">false</option>
+                    <option value="true">true</option>
+                </select>
+            </div>
+            <button id="add-button" type="submit">Add</button>
+        </form>
+        <hr>
+        <!--Todo list-->
+        <h3>Todos</h3>
+        <ul id="todos-list">
+            <li>
+                <p>UserId: 1, id: 2, title: "feed the cat", completed: true</p>
+                <button type="button" class="todo-btn" id="edit-btn">Edit</button>
+                <button type="button" class="todo-btn" id="delete-btn">Delete</button>
+            </li>
+            <hr>
+        </ul>
+    </div>
+
+    <!--Footer-->
+    <footer>
+
+    </footer>    
+    <script src="index.js"></script>
+</body>
+</html>
